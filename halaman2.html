@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <div class="background">
+    <form>
+      <h2>Form Pendaftaran Paket Wisata</h2>
+      
+      <div class="display-form">
+        <div class="form-kiri">
+          <div class="form-grup">
+            <label for="username">Nama :</label>
+            <input type="text" id="username" />
+          </div>
+          
+          <div class="form-grup">
+            <label for="paket">Jenis Kelamin :</label>
+            <select id="paket" name="input">
+              <option>-Pilih-</option>
+              <option>Laki-laki</option>
+              <option>Perempuan</option>
+            </select>
+          </div>
+
+          <div class="form-grup">
+            <label for="lahir">Tanggal Lahir :</label>
+            <input type="date" id="lahir" />
+          </div>
+          
+          <div class="form-grup">
+            <label for="nohp">Nomor Telepon :</label>
+            <input type="text" id="nohp" />
+          </div>
+          
+          <div class="form-grup">
+            <label for="email">Email :</label>
+            <input type="email" id="email" />
+          </div>
+        </div>
+        
+        <div class="form-kanan">
+          <div class="form-grup">
+            <label for="alamat">Alamat :</label>
+            <input type="text" id="alamat">
+          </div>
+          
+          <div class="form-grup">
+            <label for="date">Tanggal Keberangkatan :</label>
+            <input type="date" id="date" />
+          </div>
+          
+          <div class="form-grup">
+            <label for="paket">Pilih Paket :</label>
+            <select id="paket" name="input">
+              <option>-Pilih-</option>
+              <option>Paket Gunung</option>
+              <option>Paket Air Terjun</option>
+              <option>Paket Hutan Tropis</option>
+            </select>
+          </div>
+
+          <div class="form-grup">
+            <label for="durasi">Pilih Durasi Paket :</label>
+            <select id="durasi" name="input">
+              <option>-Pilih-</option>
+              <option>1 Hari (One Day Trip)</option>
+              <option>3 Hari 2 Malam</option>
+              <option>5 Hari 4 malam</option>
+            </select>
+          </div>
+          
+          <div class="form-grup">
+            <label for="pembayaran">Metode Pembayaran :</label>
+            <select id="pembayaran">
+              <option>-Pilih-</option>
+              <option>E-Wallet</option>
+              <option>Kartu Kredit</option>
+              <option>On the spot</option>
+            </select>
+          </div>
+        </div>
+      
+      </div>
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+    </div>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault(); // biar gak reload halaman
+
+      // Ambil nilai dari setiap input
+      const nama = document.getElementById("username").value;
+      const jenisKelamin = document.querySelectorAll("select")[0].value;
+      const tglLahir = document.getElementById("lahir").value;
+      const noHp = document.getElementById("nohp").value;
+      const email = document.getElementById("email").value;
+      const alamat = document.getElementById("alamat").value;
+      const tglBerangkat = document.getElementById("date").value;
+      const paket = document.querySelectorAll("select")[1].value;
+      const durasi = document.getElementById("durasi").value;
+      const pembayaran = document.getElementById("pembayaran").value;
+
+      // Cek apakah semua sudah diisi
+      if (
+        !nama || jenisKelamin === "-Pilih-" || !tglLahir ||
+        !noHp || !email || !alamat || !tglBerangkat ||
+        paket === "-Pilih-" || durasi === "-Pilih-" || pembayaran === "-Pilih-"
+      ) {
+        alert("⚠️ Harap isi semua data sebelum mendaftar!");
+        return;
+      }
+
+      // Tampilkan popup hasil form
+      alert(
+        "=== Data Pendaftaran Anda ===\n\n" +
+        "Nama: " + nama + "\n" +
+        "Jenis Kelamin: " + jenisKelamin + "\n" +
+        "Tanggal Lahir: " + tglLahir + "\n" +
+        "Nomor Telepon: " + noHp + "\n" +
+        "Email: " + email + "\n" +
+        "Alamat: " + alamat + "\n" +
+        "Tanggal Keberangkatan: " + tglBerangkat + "\n" +
+        "Paket: " + paket + "\n" +
+        "Durasi Paket: " + durasi + "\n" +
+        "Metode Pembayaran: " + pembayaran
+      );
+    });
+    </script>
+  </body>
+</html>

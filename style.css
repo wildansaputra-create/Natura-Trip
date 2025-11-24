@@ -1,0 +1,585 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 28px;
+}
+nav .logo img {
+  width: 160px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  padding: 5px 13px;
+  border-radius: 50px;
+}
+nav ul li a:hover {
+  color: white;
+  background-color: rgb(0, 134, 11);
+}
+/* hero */
+.hero {
+  width: 100%;
+  height: 530px;
+  color: white;
+  padding: 20px;
+  padding-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  background-position: center;
+  animation: slideBg 12s infinite linear;
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url(gambar_banner/labuan_bajo.jpg);
+  }
+  33% {
+    background-image: url(gambar_banner/gambar-utama.jpg);
+  }
+  66% {
+    background-image: url(gambar_banner/bromo.jpg);
+  }
+  100% {
+    background-image: url(gambar_banner/ubud.jpg);
+  }
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+.hero p {
+  font-size: 17px;
+  line-height: 1.3;
+  margin-bottom: 45px;
+}
+.hero button {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: none;
+  background-color: #03a527;
+  color: rgb(255, 255, 255);
+}
+.hero button:hover {
+  background-color: #048821;
+}
+/* galeri */
+.terminal-galeri {
+  width: 100%;
+  padding: 50px 20px;
+}
+.galeri {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.galeri h2 {
+  font-size: 35px;
+  margin-bottom: 7px;
+}
+.galeri .galeri-p {
+  font-size: 18px;
+}
+.galeri .display-galeri {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 35px;
+  margin-top: 35px;
+}
+.display-galeri .bingkai {
+  width: 280px;
+  height: 300px;
+  border-radius: 10px;
+}
+.bingkai.galeri1 {
+  background-image: url(galeri_after_edit/raja_ampat.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bingkai.galeri2 {
+  background-image: url(galeri_after_edit/bromo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bingkai.galeri3 {
+  background-image: url(galeri_after_edit/nusa_penida.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bingkai.galeri4 {
+  background-image: url(galeri_after_edit/kawah_ijen.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bingkai.galeri5 {
+  background-image: url(galeri_after_edit/danau_toba.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bingkai.galeri6 {
+  background-image: url(galeri_after_edit/labuan_bajo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bingkai.galeri7 {
+  background-image: url(galeri_after_edit/dieng.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bingkai.galeri8 {
+  background-image: url(galeri_after_edit/ubud.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bingkai.bingkai.galeri1:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.bingkai.bingkai.galeri2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.bingkai.bingkai.galeri3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.bingkai.bingkai.galeri4:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.bingkai.bingkai.galeri5:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.bingkai.bingkai.galeri6:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.bingkai.bingkai.galeri7:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.bingkai.bingkai.galeri8:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.teks-galeri {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.display-lokasi-galeri {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 13px;
+}
+.display-lokasi-galeri img {
+  width: 14px;
+  margin-right: 5px;
+}
+.bingkai .rating {
+  font-size: 13px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 97px;
+  display: flex;
+  color: white;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.276);
+}
+.bingkai .rating img {
+  width: 18px;
+  margin-right: 4px;
+}
+/* Gambar Slider */
+.slider {
+  margin: 40px auto;
+  position: relative;
+  width: 96%;      
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.7);
+}
+/* Layanan */
+.layanan {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  background: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.judul-section {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.deskripsi-section {
+  color: #1c1c1c;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.layanan-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.layanan-card {
+  background: #ffffff;
+  border-radius: 15px;
+  margin-top: 15px;
+  padding: 20px 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.164);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.layanan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.layanan-card img {
+  width: 70px;
+}
+
+.layanan-card h3 {
+  color: #009420;
+  font-size: 1.4rem;
+  margin: 9px 0 13px;
+}
+
+.layanan-card p {
+  color: #2a2a2a;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Section Kontak */
+.kontak {
+  background-color: rgb(214, 255, 206);
+  padding: 30px;
+}
+.display-kontak {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.kontak-kiri h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.kontak-kiri .prgraf-kontak {
+  font-size: 14px;
+  width: 90%;
+}
+.display-icon-kontak {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 80px;
+  margin-top: 30px;
+}
+.icon-kontak-kiri img {
+  width: 20px;
+}
+.telepon .teks-telepon h4 {
+  margin-bottom: 5px;
+}
+.lokasi .teks-lokasi h4 {
+  margin-bottom: 5px;
+}
+.icon-kontak-kiri .telepon {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.icon-kontak-kiri .lokasi {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+/* icon kontak kanan */
+.icon-kontak-kanan img {
+  width: 25px;
+}
+.email .teks-email h4 {
+  margin-bottom: 5px;
+}
+.jam .teks-jam h4 {
+  margin-bottom: 5px;
+}
+.icon-kontak-kanan .email {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.icon-kontak-kanan .jam {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+/* Section Footer */
+footer {
+  padding: 20px 50px;
+  background-color: #00370c;
+}
+.display-footer {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.797);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.display-footer h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.footer-kiri img {
+  width: 170px;
+  margin-bottom: 5px;
+}
+.footer-tengah ul li {
+  list-style: none;
+}
+.footer-kanan a {
+  color: rgba(255, 255, 255, 0.781);
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 5px;
+}
+.footer-kanan ul li {
+  list-style: none;
+}
+.footer-kanan ul li a img {
+  width: 17px;
+  margin-right: 5px;
+}
+hr {
+  border: 1px solid #ffffff2a;
+}
+.wm {
+  color: rgba(255, 255, 255, 0.463);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+/* Responsive adjustment */
+/*   RESPONSIVE UNTUK 480px     */
+
+
+@media screen and (max-width: 500px) {
+  /* NAVBAR */
+  nav {
+    padding: 5px 15px;
+  }
+
+  nav .logo img {
+    width: 130px;
+  }
+
+  nav ul {
+    display: none; 
+  }
+
+  /* HERO */
+  .hero {
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 28px;
+    margin-top: 80px;
+  }
+  .hero p {
+    font-size: 14px;
+    br {
+      display: none;
+    }
+  }
+  .hero button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* GALERI */
+  .galeri h2 {
+    padding-top: 0;
+  }
+  .galeri .galeri-p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .terminal-galeri {
+    padding-top: 30px;
+  }
+  .display-galeri .bingkai {
+  width: 210px;
+  height: 240px;
+  border-radius: 10px;
+  }
+  
+
+  /* SLIDER */
+  .slider {
+  margin: 30px auto;
+  position: relative;
+  width: 92%;      
+  height: 270px;
+  overflow: hidden;
+  border-radius: 10px;
+  }
+  .slides {
+    height: 130%;
+  }
+
+  /* Layanan */
+  .layanan .judul-section {
+    font-size: 37px;
+  }
+
+  /* KONTAK */
+  .display-kontak {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .display-icon-kontak {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .icon-kontak-kiri .telepon {
+    margin: 10px 0;
+  }
+  .icon-kontak-kanan .email {
+    margin: 10px 0;
+  }
+  .icon-kontak-kanan .jam {
+    br {
+      display: none;
+    }
+    margin-bottom: 10px;
+  }
+  iframe {
+    margin: auto;
+    width: 100%;
+    height: 250px;
+  }
+  .display-icon-kontak img {
+    /* width: 15px; */
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 20px 33px;
+  }
+  .display-footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-kiri {
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-tengah {
+    margin: 5px 0;
+  }
+  .footer-kanan ul {
+    gap: 10px;
+    display: flex;
+    margin-bottom: 5px;
+  }
+}
+
+
+
