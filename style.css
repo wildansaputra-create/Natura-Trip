@@ -581,5 +581,18 @@ hr {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .display-galeri .bingkai {
+  width: 170px;
+  height: 220px;
+  border-radius: 10px;
+  }
+  .teks-galeri {
+    font-size: 13px;
+  }
+  .display-lokasi-galeri p {
+    font-size: 13.5px;
+  }
+}
 
 
