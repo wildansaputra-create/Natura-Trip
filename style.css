@@ -597,7 +597,17 @@ hr {
   .display-lokasi-galeri p {
     font-size: 12.5px;
   }
+  .footer-kanan ul {
+    gap: 5px;
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  .footer-kanan ul li a img {
+    width: 13px;
+  }
 }
+
 
 
 
