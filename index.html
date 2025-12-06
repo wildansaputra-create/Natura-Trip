@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Wisata</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -30,7 +31,8 @@
     </div>
 
     <div class="terminal-galeri">
-      <div class="galeri" id="galeri">
+      <div data-aos="fade-up"
+     data-aos-duration="1400" class="galeri" id="galeri">
         <h2>Destinasi Populer</h2>
         <p class="galeri-p">Di bawah ini adalah beberapa destinasi populer yang menawarkan pengalaman tak terlupakan di tengah keindahan alamnya.</p>
         <div class="display-galeri">
@@ -159,7 +161,7 @@
     </div>
 
     <!-- Slider -->
-    <div class="slider">
+    <div data-aos="zoom-in" class="slider">
       <div class="slides">
         <img src="gambar-slider/gunung.jpg" class="slide" />
         <img src="gambar-slider/hutan.jpg" class="slide" />
@@ -171,7 +173,8 @@
       <button class="next">&#10095;</button>
     </div>
     <!-- Layanan -->
-    <section class="layanan" id="layanan">
+    <section data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1400" class="layanan" id="layanan">
       <div class="container">
         <h2 class="judul-section">Layanan Kami</h2>
         <p class="deskripsi-section">Kami menyediakan berbagai paket perjalanan yang dapat anda pilih.</p>
@@ -329,6 +332,10 @@
 
     // auto slide tiap 3 detik
     setInterval(() => showSlide(index + 1), 3000);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
