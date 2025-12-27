@@ -1,0 +1,73 @@
+.hero-wrapper {
+  height: 91vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  height: 91vh;
+  object-fit: cover;
+}
+
+/* Overlay gelap */
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.365);
+  z-index: 1;
+}
+
+/* Teks DIAM di depan */
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hero-content p {
+  max-width: 580px;
+  margin-bottom: 30px;
+}
+
+/* Gallery */
+.judul-galery h2 {
+  font-weight: 600;
+}
+
+.display-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Carousel */
+.carousel-img {
+  height: 420px; /* tinggi carousel */
+  object-fit: cover;
+}
+
+/* Posisi teks */
+.carousel-caption {
+  bottom: 20px;
+}
+
+/* Indicator jadi garis */
+.carousel-indicators [data-bs-target] {
+  width: 28px;
+  height: 4px;
+  background-color: #fff;
+}
+
+/* Footer */
+footer a:hover {
+  text-decoration: underline !important;
+}

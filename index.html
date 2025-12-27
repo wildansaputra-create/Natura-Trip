@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S656Q02J2S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-S656Q02J2S');
+    </script>
+    <!-- cdn aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>NaturaTrip</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="icon/logo-baru.png" alt="logo" width="130" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#populer">Populer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#layanan">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="hero-wrapper position-relative">
+      <!-- Carousel BACKGROUND -->
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="gambar_banner/edit1.jpg" class="d-block w-100 hero-img" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="gambar_banner/edit2.jpg" class="d-block w-100 hero-img" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="gambar_banner/edit3.jpg" class="d-block w-100 hero-img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Teks Overlay -->
+      <div class="hero-content">
+        <div class="container">
+          <h1>Jelajahi Pesona Alam Indonesia</h1>
+          <p>Nikmati keindahan alam Indonesia yang tiada duanya. Temukan destinasi terbaik dari Sabang sampai Merauke.</p>
+          <a href="halaman2.html" target="_blank" class="btn btn-primary">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Galery -->
+    <section data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1500" class="py-5" id="populer">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Destinasi Populer</h2>
+          <p style="color: rgb(92, 92, 92)">Rekomendasi pilihan destinasi wisata favorit yang wajib kamu kunjungi.</p>
+        </div>
+        <!-- Card -->
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="galeri_wisata/raja-ampat.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Raja Ampat</h5>
+                <p class="card-text">📍Papua Barat Daya</p>
+                <a href="https://id.wikipedia.org/wiki/Kabupaten_Raja_Ampat" class="btn btn-primary btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="galeri_wisata/ubud.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Ubud</h5>
+                <p class="card-text">📍Gianyar, Bali</p>
+                <a href="https://id.wikipedia.org/wiki/Ubud" class="btn btn-primary btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="galeri_wisata/danau-toba.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Danau Toba</h5>
+                <p class="card-text">📍Samosir, Sumatera Utara</p>
+                <a href="https://id.wikipedia.org/wiki/Danau_Toba" class="btn btn-primary btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="galeri_wisata/bromo.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Gunung Bromo</h5>
+                <p class="card-text">📍Probolinggo, Jawa Timur</p>
+                <a href="https://id.wikipedia.org/wiki/Gunung_Bromo" class="btn btn-primary btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="galeri_wisata/nusa-penida.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Nusa Penida</h5>
+                <p class="card-text">📍Klungkung, Bali</p>
+                <a href="https://id.wikipedia.org/wiki/Nusa_Penida" class="btn btn-primary btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="galeri_wisata/borobudur.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Candi Borobudur</h5>
+                <p class="card-text">📍Magelang, Jawa Tengah</p>
+                <a href="https://id.wikipedia.org/wiki/Borobudur" class="btn btn-primary btn-sm">Lihat Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1700" class="py-5 bg-primary" id="layanan">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-white">Layanan Kami</h2>
+          <p style="color: rgb(232, 232, 232)">Kami menyediakan berbagai layanan terbaik untuk mendukung perjalanan wisata Anda.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow p-3">
+              <div class="card-body">
+                <div class="fs-1 mb-3">🧭</div>
+                <h5 class="card-title fs-4 fw-semibold text-dark">Paket Wisata</h5>
+                <p class="card-text text-secondary">Beragam pilihan paket wisata menarik ke destinasi favorit dengan harga terjangkau.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow p-3">
+              <div class="card-body">
+                <div class="fs-1 mb-3">🏨</div>
+                <h5 class="card-title fs-4 fw-semibold text-dark">Akomodasi</h5>
+                <p class="card-text text-secondary">Rekomendasi penginapan terbaik yang nyaman dan sesuai dengan kebutuhan perjalanan.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow p-3">
+              <div class="card-body">
+                <div class="fs-1 mb-3">🚗</div>
+                <h5 class="card-title fs-4 fw-semibold text-dark">Transportasi</h5>
+                <p class="card-text text-secondary">Layanan transportasi yang aman dan fleksibel untuk menunjang perjalanan Anda.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel -->
+    <section  data-aos="zoom-in" data-aos-duration="1700" class="py-5">
+      <div class="container">
+        <div id="mainCarousel" class="carousel slide carousel-fade rounded overflow-hidden shadow-sm" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="gambar-slider/gwk.jpg" class="d-block w-100 carousel-img" alt="" />
+              <div class="carousel-caption">
+                <h5>Garuda Wisnu Kencana</h5>
+                <p>Badung, Bali</p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="gambar-slider/komodo.jpg" class="d-block w-100 carousel-img" alt="" />
+              <div class="carousel-caption">
+                <h5>Pulau Komodo</h5>
+                <p>Manggarai Barat, NTT</p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="gambar-slider/pura.jpg" class="d-block w-100 carousel-img" alt="" />
+              <div class="carousel-caption">
+                <h5>Pura Taman Saraswati</h5>
+                <p>Gianyar, Bali</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTROL -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="py-5" style="background-color: rgb(209, 230, 255)" id="kontak">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Hubungi Kami</h2>
+          <p style="color: rgb(66, 66, 66)">Jangan ragu untuk menghubungi kami untuk informasi lebih lanjut.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Info Kontak -->
+          <div class="col-md-5">
+            <div class="card h-100 shadow-sm border-0 rounded-4">
+              <div class="card-body p-4">
+                <h5 class="fw-semibold mb-4">Informasi Kontak</h5>
+
+                <div class="d-flex mb-3">
+                  <div class="fs-4 me-3">📞</div>
+                  <div>
+                    <div class="fw-semibold">Telepon</div>
+                    <div class="text-muted">+62 812-3456-7890</div>
+                  </div>
+                </div>
+
+                <div class="d-flex mb-3">
+                  <div class="fs-4 me-3">📧</div>
+                  <div>
+                    <div class="fw-semibold">Email</div>
+                    <div class="text-muted">infonaturatrip@gmail.com</div>
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div class="fs-4 me-3">📍</div>
+                  <div>
+                    <div class="fw-semibold">Alamat Kantor</div>
+                    <div class="text-muted">Jl. Merdeka No.10, Bandung, Jawa Barat</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="col-md-7">
+            <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+              <iframe src="https://www.google.com/maps?q=Jalan+Merdeka+No+10+Bandung&output=embed" width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3" style="background-color: rgb(0, 0, 87)">
+      <div class="container">
+        <div class="row justify-content-between g-4">
+          <!-- DESKRIPSI -->
+          <div class="col-md-3">
+            <img src="icon/logo-baru.png" alt="NaturaTrip Logo" width="140" class="mb-3" />
+            <p class="text-white small">NaturaTrip adalah platform wisata yang menyediakan pengalaman perjalanan ke destinasi alam terbaik di Indonesia.</p>
+          </div>
+
+          <div class="col-md-3">
+            <h6 class="fw-semibold mb-3">Kontak</h6>
+            <ul class="list-unstyled text-white small">
+              <li class="mb-2">📞 +62 812-3456-7890</li>
+              <li class="mb-2">📧 infonaturatrip@gmail.com</li>
+              <li>📍 Bandung, Jawa Barat</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h6 class="fw-semibold mb-3">Media Sosial</h6>
+            <div class="d-flex flex-column gap-2 text-white-50 small">
+              <a href="https://www.instagram.com/" class="text-white text-decoration-none">Instagram</a>
+              <a href="https://web.whatsapp.com/" class="text-white text-decoration-none">WhatsApp</a>
+              <a href="https://www.facebook.com/?locale=id_ID" class="text-white text-decoration-none">Facebook</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center text-white-50 small">© 2025 NaturaTrip. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener('mouseover', initLandbot, { once: true });
+      window.addEventListener('touchstart', initLandbot, { once: true });
+      var myLandbot;
+      function initLandbot() {
+        if (!myLandbot) {
+          var s = document.createElement('script');
+          s.type = 'module';
+          s.async = true;
+          s.addEventListener('load', function () {
+            var myLandbot = new Landbot.Livechat({
+              configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3283772-MGNS78Y5V6O5ZZCM/index.json',
+            });
+          });
+          s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+    </script>
+    <!-- cdn js aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
