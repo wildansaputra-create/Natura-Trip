@@ -82,8 +82,7 @@
     </div>
 
     <!-- Galery -->
-    <section data-aos="fade-up"
-     data-aos-anchor-placement="top-center" data-aos-duration="1500" class="py-5" id="populer">
+    <section data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500" class="py-5" id="populer">
       <div class="container">
         <div class="text-center mb-4">
           <h2 class="fw-bold">Destinasi Populer</h2>
@@ -97,7 +96,16 @@
               <div class="card-body">
                 <h5 class="card-title">Raja Ampat</h5>
                 <p class="card-text">📍Papua Barat Daya</p>
-                <a href="https://id.wikipedia.org/wiki/Kabupaten_Raja_Ampat" class="btn btn-primary btn-sm">Lihat Detail</a>
+                <button
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#detailModal"
+                  data-title="Raja Ampat"
+                  data-img="galeri_wisata/raja-ampat.jpg"
+                  data-desc="Kepulauan Raja Ampat terletak di Papua Barat Daya, Indonesia, terkenal sebagai surga bawah laut dengan keanekaragaman hayati laut tertinggi di dunia, memiliki perairan jernih, gugusan pulau karst yang indah, dan menjadi destinasi utama untuk menyelam, dengan keindahan alam dan budaya lokal yang unik."
+                >
+                  Lihat Detail
+                </button>
               </div>
             </div>
           </div>
@@ -108,7 +116,16 @@
               <div class="card-body">
                 <h5 class="card-title">Ubud</h5>
                 <p class="card-text">📍Gianyar, Bali</p>
-                <a href="https://id.wikipedia.org/wiki/Ubud" class="btn btn-primary btn-sm">Lihat Detail</a>
+                <button
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#detailModal"
+                  data-title="Ubud"
+                  data-img="galeri_wisata/ubud.jpg"
+                  data-desc="Kota Ubud, terletak di bagian tengah pulau Bali, Indonesia, dikenal sebagai pusat tarian dan kerajinan tradisional. Hutan hujan dan terasering padi yang mengelilingi kawasan Ubud, ditambah pura dan tempat pemujaan, merupakan salah satu lanskap Bali yang paling terkenal."
+                >
+                  Lihat Detail
+                </button>
               </div>
             </div>
           </div>
@@ -119,7 +136,16 @@
               <div class="card-body">
                 <h5 class="card-title">Danau Toba</h5>
                 <p class="card-text">📍Samosir, Sumatera Utara</p>
-                <a href="https://id.wikipedia.org/wiki/Danau_Toba" class="btn btn-primary btn-sm">Lihat Detail</a>
+                <button
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#detailModal"
+                  data-title="Danau Toba"
+                  data-img="galeri_wisata/danau-toba.jpg"
+                  data-desc="Danau Toba adalah danau vulkanik terbesar di dunia dan danau terbesar di Indonesia, terbentuk dari letusan supervulkan purba sekitar 74.000 tahun lalu di Sumatera Utara; danau ini punya Pulau Samosir di tengahnya, menjadi destinasi wisata super prioritas"
+                >
+                  Lihat Detail
+                </button>
               </div>
             </div>
           </div>
@@ -130,7 +156,16 @@
               <div class="card-body">
                 <h5 class="card-title">Gunung Bromo</h5>
                 <p class="card-text">📍Probolinggo, Jawa Timur</p>
-                <a href="https://id.wikipedia.org/wiki/Gunung_Bromo" class="btn btn-primary btn-sm">Lihat Detail</a>
+                <button
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#detailModal"
+                  data-title="Gunung Bromo"
+                  data-img="galeri_wisata/bromo.jpg"
+                  data-desc="Gunung Bromo adalah gunung berapi aktif ikonik di Jawa Timur, Indonesia, terkenal dengan pemandangan matahari terbitnya yang spektakuler, bagian dari Taman Nasional Bromo Tengger Semeru. Pengunjung datang untuk menyaksikan keajaiban alam seperti lautan pasir, kawah berasap, dan Bukit Teletubbies."
+                >
+                  Lihat Detail
+                </button>
               </div>
             </div>
           </div>
@@ -141,7 +176,16 @@
               <div class="card-body">
                 <h5 class="card-title">Nusa Penida</h5>
                 <p class="card-text">📍Klungkung, Bali</p>
-                <a href="https://id.wikipedia.org/wiki/Nusa_Penida" class="btn btn-primary btn-sm">Lihat Detail</a>
+                <button
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#detailModal"
+                  data-title="Nusa Penida"
+                  data-img="galeri_wisata/nusa-penida.jpg"
+                  data-desc="Nusa Penida adalah sebuah pulau kecil yang terletak di tenggara Bali, Indonesia, terkenal dengan keindahan alamnya yang dramatis seperti tebing-tebing curam (Kelingking Beach), pantai berpasir putih (Diamond Beach, Atuh Beach), air laut biru jernih, serta kekayaan kehidupan bawah laut untuk snorkeling dan diving."
+                >
+                  Lihat Detail
+                </button>
               </div>
             </div>
           </div>
@@ -152,13 +196,65 @@
               <div class="card-body">
                 <h5 class="card-title">Candi Borobudur</h5>
                 <p class="card-text">📍Magelang, Jawa Tengah</p>
-                <a href="https://id.wikipedia.org/wiki/Borobudur" class="btn btn-primary btn-sm">Lihat Detail</a>
+                <button
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#detailModal"
+                  data-title="Candi Borobudur"
+                  data-img="galeri_wisata/borobudur.jpg"
+                  data-desc="Candi Borobudur adalah monumen Buddha terbesar di dunia, mahakarya arsitektur abad ke-9 di Magelang, Jawa Tengah, yang dibangun pada masa Dinasti Syailendra sebagai simbol perjalanan spiritual menuju pencerahan, terdiri dari 10 tingkat yang melambangkan alam semesta Buddha dengan relief yang kaya akan cerita kehidupan Sang Buddha."
+                >
+                  Lihat Detail
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Modal Card -->
+    <div class="modal fade" id="detailModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Detail Wisata</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row g-4 align-items-center">
+              <!-- GAMBAR -->
+              <div class="col-md-5">
+                <img id="modalImg" src="" class="img-fluid rounded-3" alt="" />
+              </div>
+
+              <!-- DESKRIPSI -->
+              <div class="col-md-7">
+                <h4 id="modalName"></h4>
+                <p id="modalDesc" class="text-muted"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS Modal Card -->
+    <script>
+      const detailModal = document.getElementById('detailModal');
+
+      detailModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+
+        const title = button.getAttribute('data-title');
+        const img = button.getAttribute('data-img');
+        const desc = button.getAttribute('data-desc');
+
+        detailModal.querySelector('#modalTitle').textContent = title;
+        detailModal.querySelector('#modalName').textContent = title;
+        detailModal.querySelector('#modalImg').src = img;
+        detailModal.querySelector('#modalDesc').textContent = desc;
+      });
+    </script>
 
     <!-- Layanan -->
     <section data-aos="fade-up"
@@ -368,5 +464,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
+
 
 
